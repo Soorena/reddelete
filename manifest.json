@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "version": "0.1",
+    "name": "reddelete",
+    "description": "scramble your trail and automate the deletion of your reddit posts/comments!",
+    "icons": {
+        "48": "logo_48.png",
+        "128": "logo_128.png"
+    },
+    "background": { "service_worker": "service_worker.js" },
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Open popup"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://old.reddit.com/*"],
+            "js": ["browser-polyfill.min.js", "content_script.js"]
+        }
+    ],
+    "permissions": ["tabs", "storage"]
+}

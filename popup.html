@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Popup</title>
+        <script src="browser-polyfill.min.js"></script>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                width: 250px;
+            }
+
+            div {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <label for="checkbox-post">Delete posts:</label>
+            <input type="checkbox" id="checkbox-post" />
+            <br />
+            <label for="checkbox-comment">Delete comments:</label>
+            <input type="checkbox" id="checkbox-comment" />
+        </div>
+        <div>
+            <label for="input-date">Deletion start date (going forward):</label>
+            <input type="date" id="input-date" />
+            <br />
+            <label for="checkbox-comment">Do not scramble:</label>
+            <input type="checkbox" id="checkbox-scramble" />
+        </div>
+        <button id="submit">Start deleting</button>
+        <script src="popup.js"></script>
+    </body>
+</html>
