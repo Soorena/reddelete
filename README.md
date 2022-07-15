@@ -9,8 +9,9 @@ scramble your data and automate deletion of your posts and comments on reddit!
 4. Select 'load unpacked' and choose the folder
 5. Ensure extension is installed in toolbar
 6. Visit reddit.com and login
-7. Select the extension in toolbar
-8. Choose posts/comments/timeline
-9. Watch it work!
+7. Select 'User Settings' on the site and make sure you 'Opt out of redesign' at the bottom
+8. Select the extension in toolbar
+9. Choose posts/comments/timeline
+10. Watch it work!
 
 Since deletion of posts only disassociates the username from the post itself and the content stays public, scrambling will edit the content to a string of random characters prior to deletion.
