@@ -6,35 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Popup</title>
         <script src="browser-polyfill.min.js"></script>
-        <style>
-            body {
-                display: flex;
-                flex-direction: column;
-                padding: 10px;
-                width: 250px;
-            }
-
-            div {
-                margin-bottom: 10px;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700">
     </head>
     <body>
-        <div>
-            <label for="checkbox-post">Delete posts:</label>
-            <input type="checkbox" id="checkbox-post" />
-            <br />
-            <label for="checkbox-comment">Delete comments:</label>
-            <input type="checkbox" id="checkbox-comment" />
+        <div class="line">
+            <label for="checkbox-post">Delete posts</label>
+            <div class="custom-checkbox">
+                <input class="custom-checkbox-input" type="checkbox" id="checkbox-post"/>
+                <label class="custom-checkbox-label" for="checkbox-post">
+                  <label class="custom-checkbox-label-aux" for="checkbox-post">
+                </label>
+            </div>
         </div>
-        <div>
-            <label for="input-date">Deletion start date (going forward):</label>
+        
+        <div class="line">
+            <label for="checkbox-comment">Delete comments</label>
+            <div class="custom-checkbox">
+                <input class="custom-checkbox-input" type="checkbox" id="checkbox-comment"/>
+                <label class="custom-checkbox-label" for="checkbox-comment">
+                  <label class="custom-checkbox-label-aux" for="checkbox-comment">
+                </label>
+            </div>
+        </div>
+
+        <div class="line">
+            <label for="input-date">Deletion start date</label>
+            <span class="tooltip-text">Choose a starting date far back enough to have content to delete. It goes from [Date chosen] to [Today].</span>
             <input type="date" id="input-date" />
-            <br />
-            <label for="checkbox-comment">Do not scramble:</label>
-            <input type="checkbox" id="checkbox-scramble" />
+        </div>
+
+        <div class="line">
+            <label for="checkbox-scramble">Do not scramble</label>
+            <span class="tooltip-text">Deleted comments can still be read despite being marked [deleted]. Overwriting comments with a random combination of characters helps get rid of previous information. It's recommended to leave this checkbox disabled.</span>
+            <div class="custom-checkbox">
+                <input class="custom-checkbox-input" type="checkbox" id="checkbox-scramble"/>
+                <label class="custom-checkbox-label" for="checkbox-scramble">
+                  <label class="custom-checkbox-label-aux" for="checkbox-scramble">
+                </label>
+            </div>
         </div>
         <button id="submit">Start deleting</button>
         <script src="popup.js"></script>
     </body>
 </html>
+
