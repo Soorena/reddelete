@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 250px;
+    font-family: "Open+Sans", sans-serif;
+}
+
+div {
+    margin-bottom: 10px;
+}
