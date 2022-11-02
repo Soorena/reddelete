@@ -19,6 +19,7 @@
                 </label>
             </div>
         </div>
+        
         <div class="line">
             <label for="checkbox-comment">Delete comments</label>
             <div class="custom-checkbox">
@@ -28,12 +29,16 @@
                 </label>
             </div>
         </div>
+
         <div class="line">
             <label for="input-date">Deletion start date</label>
+            <span class="tooltip-text">Choose a starting date far back enough to have content to delete. It goes from [Date chosen] to [Today].</span>
             <input type="date" id="input-date" />
         </div>
+
         <div class="line">
             <label for="checkbox-comment">Do not scramble</label>
+            <span class="tooltip-text">Deleted comments can still be read despite being marked [deleted]. Overwriting comments with a random combination of characters helps get rid of previous information. It's recommended to leave this checkbox disabled.</span>
             <div class="custom-checkbox">
                 <input class="custom-checkbox-input" type="checkbox" id="checkbox-scramble"/>
                 <label class="custom-checkbox-label" for="checkbox-scramble">
@@ -43,7 +48,6 @@
         </div>
         <button id="submit">Start deleting</button>
         <script src="popup.js"></script>
-
-       
     </body>
 </html>
+
