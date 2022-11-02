@@ -10,21 +10,40 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700">
     </head>
     <body>
-        <div>
-            <label for="checkbox-post">Delete posts:</label>
-            <input type="checkbox" id="checkbox-post" />
-            <br />
-            <label for="checkbox-comment">Delete comments:</label>
-            <input type="checkbox" id="checkbox-comment" />
+        <div class="line">
+            <label for="checkbox-post">Delete posts</label>
+            <div class="custom-checkbox">
+                <input class="custom-checkbox-input" type="checkbox" id="checkbox-post"/>
+                <label class="custom-checkbox-label" for="checkbox-post">
+                  <label class="custom-checkbox-label-aux" for="checkbox-post">
+                </label>
+            </div>
         </div>
-        <div>
-            <label for="input-date">Deletion start date (going forward):</label>
+        <div class="line">
+            <label for="checkbox-comment">Delete comments</label>
+            <div class="custom-checkbox">
+                <input class="custom-checkbox-input" type="checkbox" id="checkbox-comment"/>
+                <label class="custom-checkbox-label" for="checkbox-comment">
+                  <label class="custom-checkbox-label-aux" for="checkbox-comment">
+                </label>
+            </div>
+        </div>
+        <div class="line">
+            <label for="input-date">Deletion start date</label>
             <input type="date" id="input-date" />
-            <br />
-            <label for="checkbox-comment">Do not scramble:</label>
-            <input type="checkbox" id="checkbox-scramble" />
+        </div>
+        <div class="line">
+            <label for="checkbox-comment">Do not scramble</label>
+            <div class="custom-checkbox">
+                <input class="custom-checkbox-input" type="checkbox" id="checkbox-scramble"/>
+                <label class="custom-checkbox-label" for="checkbox-scramble">
+                  <label class="custom-checkbox-label-aux" for="checkbox-scramble">
+                </label>
+            </div>
         </div>
         <button id="submit">Start deleting</button>
         <script src="popup.js"></script>
+
+       
     </body>
 </html>
